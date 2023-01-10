@@ -25,10 +25,39 @@ public class Ejercicio1 {
         //pero sin espacios y en mayúscula:
         //"NOMBRE,APELLIDOS,DIRECCIÓN,TELÉFONO"
         String csv2 = crearCampoCSVSinEspaciosYMayuscula(csv1);
+        System.out.println(csv2);
+        //Un método, que se le pase la cadena anterior y nos devuelva el nombre
+        //con el formato apellidos, nombre
+        String nombre = crearNombre(csv2);
+        System.out.printf("NOMBRE: %s%n", nombre);
+        //Un método que se le pase el String anterior de apellidos y nombre, nos diga
+        //cuantas vocales tiene entre apellidos y nombre
+        int numeroVocalesNombre = contarVocalesDeNombre(nombre);
     }
 
-    private static String crearCampoCSVSinEspaciosYMayuscula(String csv1) {
-        return csv1;
+    private static int contarVocalesDeNombre(String nombre) {
+        int contadorVocales = 0;
+        for (int i = 0; i < nombre.length(); i++) {
+            if (nombre.toLowerCase().charAt(i) == 'a' || nombre.toLowerCase().charAt(i) == 'e' )
+                contadorVocales++;
+        }
+        return contadorVocales;
+    }
+
+    private static String crearNombre(String csv) {
+        //recibo "NOMBRE,APELLIDOS,DIRECCIÓN,TELÉFONO"
+        //devuelvo: apellidos, nombre
+        String[] tokens = csv.split(",");
+        //new String[]{"NOMBRE","APELLIDOS","DIRECCION","TELEFONO"}
+        return tokens[1].toLowerCase() + ", " + tokens[0].toLowerCase();
+    }
+
+    private static String crearCampoCSVSinEspaciosYMayuscula(String csv) {
+        //csv = "nombre, apellidos, direccion, telefono"
+        //return NOMBRE,APELLIDOS,DIRECCION,TELEFONO
+        return csv.replaceAll(" ","").toUpperCase();
+        //falla por que quita el espacios en blanco de los apellidos
+        //solucionamos con split(", ")
     }
 
     private static String crearCampoCSV(String[] datos) {
@@ -47,8 +76,6 @@ public class Ejercicio1 {
 
 
 
-    //Un método, que se le pase la cadena anterior y nos devuelva el nombre
-    //con el formato apellidos, nombre
-    //Un método que se le pase el String anterior de apellidos y nombre, nos diga
-    //cuantas vocales tiene entre apellidos y nombre 
+
+
 }
