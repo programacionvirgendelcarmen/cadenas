@@ -8,7 +8,7 @@ public class Ejercicio1 {
         datos[0] = "javier";
         .....
          */
-        String[] datos = {"javier", "gómez hernández", "avda. madrid 35", "953222222"};
+        String[] datos = {"javi", "gómez hernández", "avda. madrid 35", "953222222"};
         //usamos un bucle mejorado aparezca en una línea cada uno de los valores:
         //nombre
         //apellidos
@@ -33,12 +33,17 @@ public class Ejercicio1 {
         //Un método que se le pase el String anterior de apellidos y nombre, nos diga
         //cuantas vocales tiene entre apellidos y nombre
         int numeroVocalesNombre = contarVocalesDeNombre(nombre);
+        System.out.printf("%s tiene %d vocales%n", nombre, numeroVocalesNombre);
     }
 
     private static int contarVocalesDeNombre(String nombre) {
         int contadorVocales = 0;
+        nombre = nombre.toLowerCase();
         for (int i = 0; i < nombre.length(); i++) {
-            if (nombre.toLowerCase().charAt(i) == 'a' || nombre.toLowerCase().charAt(i) == 'e' )
+            if (nombre.charAt(i) == 'a' || nombre.charAt(i) == 'e'|| nombre.charAt(i) == 'i'
+                    || nombre.charAt(i) == 'o' || nombre.charAt(i) == 'u' ||
+                    nombre.charAt(i) == 'á' || nombre.charAt(i) == 'é' ||nombre.charAt(i) == 'í'
+                    || nombre.charAt(i) == 'ó' || nombre.charAt(i) == 'ú' || nombre.charAt(i) == 'ü')
                 contadorVocales++;
         }
         return contadorVocales;
@@ -55,9 +60,10 @@ public class Ejercicio1 {
     private static String crearCampoCSVSinEspaciosYMayuscula(String csv) {
         //csv = "nombre, apellidos, direccion, telefono"
         //return NOMBRE,APELLIDOS,DIRECCION,TELEFONO
-        return csv.replaceAll(" ","").toUpperCase();
+        //return csv.replaceAll(" ","").toUpperCase();
         //falla por que quita el espacios en blanco de los apellidos
         //solucionamos con split(", ")
+        return csv.replaceAll(", ",",").toUpperCase();
     }
 
     private static String crearCampoCSV(String[] datos) {
