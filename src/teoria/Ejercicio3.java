@@ -1,5 +1,7 @@
 package teoria;
 
+import strings.StringHelper;
+
 import java.util.Scanner;
 
 public class Ejercicio3 {
@@ -23,7 +25,8 @@ public class Ejercicio3 {
             else
                 simbolo = true;
         }*/
-        boolean segura = esContrasennaSegura(passwd);
+       // boolean segura = esContrasennaSegura(passwd);
+        boolean segura = StringHelper.isSafePasswordDefault(passwd);
         System.out.printf("%s ¿Es segura? %B%n", passwd, segura);
     }
     public static boolean esContrasennaSegura(String passwd){
