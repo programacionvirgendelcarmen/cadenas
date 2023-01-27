@@ -2,6 +2,7 @@ package ejercicios.ejercicio2;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 
 import static strings.StringHelper.createSafePassword;
@@ -11,6 +12,7 @@ public class TestClaveSegura {
         List<String> passwords = new ArrayList<>();
         //abrir Scanner
         Scanner sc = new Scanner(System.in);
+        Random random = new Random();
         //solicitamos el nº claves
         String sNClaves = "";
         do {
@@ -24,6 +26,7 @@ public class TestClaveSegura {
             System.out.println("Introduce el tamaño de las claves a generas (8-22)");
             sTClaves = sc.nextLine();
         } while ( ! sTClaves.matches("[89]|1[0-9]|2[0-2]") );
+        sc.close();
         int iTClaves = Integer.parseInt(sTClaves);
         //usando el método createSafePassword(int lenght)
         //creamos las claves y la añadimos a una colección (array o List)
@@ -34,5 +37,8 @@ public class TestClaveSegura {
         //mostramos la colección
         System.out.println(passwords);
         //de forma aleatoria, escogemos una y la mostramos
+        int eleccion = random.nextInt(passwords.size());
+        String candidata = passwords.get(eleccion);
+        System.out.printf("Clave seleccionada la nº %d %s%n", eleccion + 1, candidata);
     }
 }

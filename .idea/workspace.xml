@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0211659e-eb48-4629-8cce-cf3e21ca425c" name="Changes" comment="Empezando ejercicios del tema cadenas">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/librerias.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/librerias1.xml" beforeDir="false" />
+    <list default="true" id="0211659e-eb48-4629-8cce-cf3e21ca425c" name="Changes" comment="Ejercicio 2 del tema de cadenas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cadenas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cadenas.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/librerias/librerias.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ejercicios/ejercicio2/TestClaveSegura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejercicios/ejercicio2/TestClaveSegura.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674570619627</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Ejercicio 2 del tema de cadenas">
+      <created>1674737150771</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674737150771</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -112,6 +116,7 @@
     <MESSAGE value="Ejercicio contraseña segura" />
     <MESSAGE value="Ejercicio contraseña segura terminado con un método estático que usaremos en un helper" />
     <MESSAGE value="Empezando ejercicios del tema cadenas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Empezando ejercicios del tema cadenas" />
+    <MESSAGE value="Ejercicio 2 del tema de cadenas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio 2 del tema de cadenas" />
   </component>
 </project>
