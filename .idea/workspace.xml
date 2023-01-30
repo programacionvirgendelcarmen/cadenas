@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0211659e-eb48-4629-8cce-cf3e21ca425c" name="Changes" comment="Ejercicio 2 del tema de cadenas">
+    <list default="true" id="0211659e-eb48-4629-8cce-cf3e21ca425c" name="Changes" comment="Ejercicio 3 del tema de cadenas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ejercicios/ejercicio2/TestClaveSegura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejercicios/ejercicio2/TestClaveSegura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ejercicios/ejercicio3/Ejercicio3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejercicios/ejercicio3/Ejercicio3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674737150771</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Ejercicio 3 del tema de cadenas">
+      <created>1674830710770</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1674830710770</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -117,6 +124,7 @@
     <MESSAGE value="Ejercicio contraseña segura terminado con un método estático que usaremos en un helper" />
     <MESSAGE value="Empezando ejercicios del tema cadenas" />
     <MESSAGE value="Ejercicio 2 del tema de cadenas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio 2 del tema de cadenas" />
+    <MESSAGE value="Ejercicio 3 del tema de cadenas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio 3 del tema de cadenas" />
   </component>
 </project>
